@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function PageNav() {
+function Nav() {
   return (
     <nav>
       <ul>
@@ -15,4 +15,4 @@ function PageNav() {
   );
 }
 
-export default PageNav;
+export default Nav;
