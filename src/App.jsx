@@ -5,8 +5,8 @@ import Room from "./pages/Room";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
 // Import global components
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 // Import Styles
 import "./styles/app.scss";
 
