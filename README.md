@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Front-End Developer Training
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## P7-Kasa
 
-## Available Scripts
+Project #7 of the OPENCLASSROOMS Web Developer training program
 
-In the project directory, you can run:
+### Context:
 
-### `yarn start`
+Kasa has been in the business of apartment rentals between individuals for nearly 10 years. The company aims to completely redesign its website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Objectives:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Develop the entire application and its components using React, following the provided Figma mockups. Reusable components need to be created for the opening tabs and the photo carousel.
 
-### `yarn test`
+### Back-end / Data:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here is this JSON file to build the corresponding Front-End.
 
-### `yarn build`
+### Functional Specifications:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Some clarifications on the site's features:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. For scrolling through photos in the gallery (Gallery component):
+   *If the user is on the first image and clicks "Previous Image," the gallery displays the last image.
+   *Conversely, when the displayed image is the last one in the gallery, if the user clicks "Next Image," the gallery displays the first image.
+   \*If there's only one image, the "Next" and "Previous" buttons don't appear.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. The gallery must always maintain the same height as indicated in the Figma mockup. Therefore, images will be cropped and centered within the image frame.
+   Collapse: By default, Collapses are closed when the page initializes.
 
-### `yarn eject`
+3. If the Collapse is open, a user click should close it. Conversely, if the Collapse is closed, a click should open it.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Technical Specifications:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Divide into modular and reusable components.
+2. Logical file structure.
+3. Use of events.
+4. Utilize lists through iteration.
+5. Use of props between components.
+6. The 404 page is displayed for each nonexistent route or if a value present in the URL isn't part of the provided data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Languages Used:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+HTML5 / CSS3 / SASS / JavaScript / React
 
-## Learn More
+### Acquired Skills:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Develop web application routes with React Router.
