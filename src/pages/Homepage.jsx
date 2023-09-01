@@ -1,9 +1,9 @@
 // import of component
 import Gallery from "../components/Gallery";
+import Banner from "../components/Banner";
 
 // import of images
 import bannerHome from "../assets/banner/banner-home.jpg";
-import Banner from "../components/Banner";
 
 function Homepage() {
   return (

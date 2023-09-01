@@ -1,7 +1,13 @@
+// Components
+import Banner from "../components/Banner";
+
+// Images
+import bannerAbout from "../assets/banner/banner-about.jpg";
+
 function About() {
   return (
     <div>
-      <h1>About</h1>
+      <Banner banner={bannerAbout} title="" />
     </div>
   );
 }
