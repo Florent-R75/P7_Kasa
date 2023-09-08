@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Import pages of Router
 import Homepage from "./pages/Homepage";
-import Room from "./pages/Room";
+import Accommodation from "./pages/Accommodation";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
 // Import global components
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="room" element={<Room />} />
+        <Route path="accommodation/:id" element={<Accommodation />} />
         <Route path="about" element={<About />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

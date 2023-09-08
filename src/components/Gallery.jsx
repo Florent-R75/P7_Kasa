@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import accommodations from "../accommodations/accommodations.json";
+import accommodations from "../data/accommodations.json";
 import Card from "./Card";
 
 const Gallery = () => {

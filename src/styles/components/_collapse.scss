@@ -35,6 +35,17 @@
         }
       }
     }
+
+    &__arrow_btn_down {
+      margin-right: 2%;
+    }
+
+    &__arrow_btn_up {
+      margin-right: 2%;
+      transform: rotate(180deg);
+      transition: transform 0.5s;
+    }
+
     &__content {
       background-color: $secondary-color;
       width: 100%;

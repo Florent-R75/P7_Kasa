@@ -9,7 +9,7 @@ body {
   @include body-position;
 
   @media (min-width: $breakpoint-desktop) {
-    max-width: 100%;
+    max-width: 1400px;
   }
 }
 main {
