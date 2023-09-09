@@ -5,24 +5,20 @@ import { useState } from "react";
 import arrow from "../assets/collapse/arrow-collapse.svg";
 
 const Collapse = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Je definis la variable par default sur false, donc a l'etat ferme
 
-  const display = () => {
-    setIsOpen(!isOpen);
+  const toggle = () => {
+    setIsOpen(!isOpen); // Je definis la fonction de bascule pour la connecter au OnClick
   };
 
   return (
     <div className="collapse__dropdown__container">
       <div className="collapse__dropdown__title">
         <h2>{title}</h2>
-        <div onClick={display}>
-          {/* {isOpen ? (
-            <i className="fa-solid fa-chevron-up"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-down"></i>
-          )} */}
+        <div onClick={toggle}>
           <img
             className={
+              // Selon le state de la variable, on applique une transformation sur le CSS pour declencher une animation de la fleche
               !isOpen
                 ? "collapse__dropdown__arrow_btn_down"
                 : "collapse__dropdown__arrow_btn_up"
@@ -33,7 +29,10 @@ const Collapse = ({ title, content }) => {
         </div>
       </div>
       <div className="collapse__dropdown__content">
-        {isOpen && <p>{content}</p>}
+        {/* En fonction de l'etat de la variable, le contenu s'affiche ou disparait */}
+        {isOpen && (
+          <div className="collapse__dropdown__content__text">{content}</div>
+        )}
       </div>
     </div>
   );

@@ -24,11 +24,13 @@ function Carrousel({ slides }) {
   return (
     <section className="slide">
       {length > 1 && (
+        // Affichage de la fleche droite
         <p className="left-Arrow" onClick={prevImage}>
           <img src={arrowLeft} alt="flèche-directionnelle-précédent"></img>
         </p>
       )}
       {length > 1 && (
+        // Affichage de la fleche gauche
         <p className="right-Arrow" onClick={nextImage}>
           <img src={arrowRight} alt="flèche-directionnelle-suivant"></img>
         </p>
@@ -37,11 +39,14 @@ function Carrousel({ slides }) {
         return (
           <div
             key={index}
+            // Je definis une condition pour controller l'activation du Carrousel
             className={index === current ? "slider active" : "slider"}
           >
+            {/* Je definis une condition pour controller le rendu du Carrousel */}
             {index === current && (
               <img src={image} alt="img-appartement" className="slide__image" />
             )}
+            {/* Je definis une condition pour eviter l'affichage d'un tableau vide */}
             {index === current && length > 1 && (
               <span className="slider__number">
                 {current + 1}/{length}

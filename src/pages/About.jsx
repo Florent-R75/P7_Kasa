@@ -6,24 +6,24 @@ import Collapse from "../components/Collapse";
 import bannerAbout from "../assets/banner/banner-about.jpg";
 
 // Datas
-import Charter from "../data/charter.json";
+import rules from "../data/rules.json";
 
 function About() {
   return (
-    <div className="about">
+    <main className="about">
       <Banner banner={bannerAbout} title="" />
       <div className="collapse">
         <div className="collapse__dropdown">
-          {Charter.map((charter) => {
+          {rules.map((rule) => {
             return (
-              <div key={charter.id}>
-                <Collapse title={charter.title} content={charter.content} />
+              <div key={rule.id}>
+                <Collapse title={rule.title} content={rule.content} />
               </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

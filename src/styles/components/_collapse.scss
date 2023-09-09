@@ -49,14 +49,14 @@
     &__content {
       background-color: $secondary-color;
       width: 100%;
-
+      color: $primary-color;
       border-radius: 5px;
 
       @media screen and (min-width: $breakpoint-desktop) {
         width: 100%;
       }
 
-      p {
+      &__text {
         @include font(20px, 400);
         color: $primary-color;
         margin: 0 auto;
