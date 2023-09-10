@@ -18,7 +18,7 @@ The site is composed of :
 1. A homepage with a image's grid of the housing.
 2. An about page who present the guidelines of the company.
 3. An error/no page who capture the errors of navigation.
-4. A card page who present the individual housing with specific informations
+4. A card page who present the individual housing with specific informations.
 
 ### Functionnal Specifications :
 
@@ -45,7 +45,7 @@ Develop web application routes with React Router.
 
 After download the project locally :
 
-Open a terminal, go to the source of the folder, and run " yarn install" or " npm install" to install the dependencies.
+Open a terminal, go to the source of the folder, and run `yarn install` or `npm install` to install the dependencies.
 
 ## Configuration
 
