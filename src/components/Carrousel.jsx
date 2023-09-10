@@ -6,10 +6,10 @@ import arrowRight from "../assets/carrousel/arrow.right.carrousel.svg";
 
 function Carrousel({ slides }) {
   /* Crée un Hook d'état */
-  const [current, setCurrent] = useState(0); //je définie l'index du premier slide à 0
-  const length = slides.length; //longueur du tableau de slides
+  const [current, setCurrent] = useState(0); //Je définie le point de retournement du slide à 0.
+  const length = slides.length; //Je stocke la longueur du tableau de slides.
 
-  /**Function pour l'image precedente */
+  /** Function pour l'image precedente */
   const nextImage = () => {
     setCurrent(current === length - 1 ? 0 : current + 1); // on repart au premier slide quand on arrive au dernier
   };
@@ -23,18 +23,18 @@ function Carrousel({ slides }) {
   }
   return (
     <section className="slide">
-      {length > 1 && (
-        // Affichage de la fleche droite
-        <p className="left-Arrow" onClick={prevImage}>
-          <img src={arrowLeft} alt="flèche-directionnelle-précédent"></img>
-        </p>
+      {length > 1 && ( // Je verifie si le Carrousel possede plus d'1 image avant d'afficher les fleches de defilement
+        <>
+          <div className="left-Arrow" onClick={prevImage}>
+            <img src={arrowLeft} alt="flèche-directionnelle-précédent"></img>
+          </div>
+
+          <div className="right-Arrow" onClick={nextImage}>
+            <img src={arrowRight} alt="flèche-directionnelle-suivant"></img>
+          </div>
+        </>
       )}
-      {length > 1 && (
-        // Affichage de la fleche gauche
-        <p className="right-Arrow" onClick={nextImage}>
-          <img src={arrowRight} alt="flèche-directionnelle-suivant"></img>
-        </p>
-      )}
+
       {slides.map((image, index) => {
         return (
           <div

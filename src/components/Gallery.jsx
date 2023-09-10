@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import accommodations from "../data/accommodations.json";
+import housings from "../data/housings.json";
 import Card from "./Card";
 
 const Gallery = () => {
   return (
     <ul className="home_gallery">
-      {accommodations.map((accommodation) => {
+      {housings.map((housing) => {
         return (
-          <li key={accommodation.id}>
-            <Link to={`/accommodation/${accommodation.id}`}>
-              <Card image={accommodation.cover} title={accommodation.title} />
+          <li key={housing.id}>
+            <Link to={`/housing/${housing.id}`}>
+              <Card image={housing.cover} title={housing.title} />
             </Link>
           </li>
         );

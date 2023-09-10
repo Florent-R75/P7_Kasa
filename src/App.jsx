@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// Import pages of Router
+//  Router
 import Homepage from "./pages/Homepage";
-import Accommodation from "./pages/Accommodation";
+import Housing from "./pages/Housing";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
-// Import global components
+// Global components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// Import Styles
-import "./styles/app.scss";
+// Styles
+import "./styles/app.css";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="accommodation/:id" element={<Accommodation />} />
+        <Route path="housing/:id" element={<Housing />} />
         <Route path="about" element={<About />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

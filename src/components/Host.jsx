@@ -1,14 +1,10 @@
 import React from "react";
 
-function Host(props) {
+function Host({ name, picture }) {
   return (
     <>
-      <span className="nom-proprietaire">{props.name}</span>
-      <img
-        className="photo-proprietaire"
-        src={props.picture}
-        alt="Propriétaire"
-      />
+      <span className="name-host">{name}</span>
+      <img className="photo-host" src={picture} alt="Propriétaire" />
     </>
   );
 }

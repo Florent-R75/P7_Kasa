@@ -1,9 +1,9 @@
-.Fiche-container {
+.housing-container {
   color: $primary-color;
   flex-direction: column;
   margin-bottom: 20px;
 }
-.Fiche-logement {
+.housing-card {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -16,10 +16,10 @@
     &__title {
       @include flex-column;
       margin-bottom: 15px;
-      .titre-logement {
+      .housing-title {
         @include font(18px, 500);
       }
-      .endroit-logement {
+      .housing-location {
         @include font(14px, 500);
       }
     }
@@ -39,12 +39,12 @@
       &__title {
         @include flex-column;
 
-        .titre-logement {
+        .housing-title {
           @include font(36px, 500);
           display: flex;
           align-items: flex-end;
         }
-        .endroit-logement {
+        .housing-location {
           @include font(18px, 500);
           display: flex;
           align-items: flex-end;
@@ -53,7 +53,7 @@
     }
   }
 
-  &__proprietaire {
+  &__host {
     @extend %flex-rowReverse;
 
     @media screen and (min-width: $breakpoint-desktop) {
@@ -62,15 +62,15 @@
       justify-content: center;
       align-items: center;
     }
-    &__nom-prop {
+    &__name-prop {
       @extend %flex-rowCenter;
-      .nom-proprietaire {
+      .name-host {
         @include font(18px, 500);
         margin-right: 10px;
         text-align: right;
         width: 93px;
       }
-      .photo-proprietaire {
+      .photo-host {
         border-radius: 50%;
         width: 64px;
         height: 64px;
@@ -80,7 +80,7 @@
     &__rate {
       @include flex-end;
       margin-top: 20px;
-      .etoile {
+      .star {
         width: 15px;
         height: 15px;
 
