@@ -62,7 +62,7 @@ const HousingDisplay = () => {
                 </div>
                 {/* Rating */}
                 <div className="description-info__host__rate">
-                  <Rating score={housing?.rating} />
+                  <Rating rating={housing?.rating} />
                 </div>
               </div>
             </div>
